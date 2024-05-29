@@ -1,0 +1,32 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+#wrapper {
+  max-width: 1366px;
+  margin: auto;
+}
+.container {
+  max-width: 960px;
+  height: auto;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* hr {
+  border-bottom: 1px solid #e3e3e3;
+} */

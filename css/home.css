@@ -1,0 +1,427 @@
+/* SECTION HERO  */
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.hero__wrapper {
+  position: relative;
+}
+a.hero__galery-link {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #e2dcdc;
+
+  background: #430200;
+  border: 2px solid #de6752;
+  border-radius: 1.6em;
+  display: block;
+  padding: 0.8em 1.6em;
+
+  position: absolute;
+  top: 19em;
+  left: 15.5em;
+}
+@media (max-width: 1080px) {
+  a.hero__galery-link {
+    display: none;
+  }
+}
+
+a.hero__galery-link:hover {
+  background: #de6752;
+}
+
+/* SECTION SERVICES  */
+.services {
+  text-align: center;
+  padding-top: 2.8em;
+  padding-bottom: 3em;
+}
+.services__list {
+  display: flex;
+  justify-content: space-between;
+}
+.services__list > li {
+  margin-left: 100px;
+  margin-right: -4px;
+}
+.services__list > li:first-child {
+  margin-left: 0;
+}
+.services__welcome {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-bottom: 0.3em;
+}
+.services__detail h3 {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+.services__list img {
+  margin-bottom: 0.7em;
+  width: 100%;
+  height: auto;
+}
+.services__list p {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+/* SECTION GOOWILL 
+ */
+.goodwill {
+  background: #282825;
+  font-weight: 300;
+}
+.goodwill__voucher {
+  padding-top: 5em;
+  margin-bottom: 90px;
+}
+.goodwill__voucher h3 {
+  color: #c9c9c9;
+  font-weight: 300;
+  font-size: 2.1em;
+  text-align: center;
+  margin-bottom: 1.8em;
+}
+
+.goodwill__voucher__list {
+  --ml-li-item: 60px;
+}
+
+.goodwill__voucher__list > li {
+  display: inline-block;
+  margin-right: -4px;
+  margin-left: var(--ml-li-item);
+  margin-bottom: 30px;
+  width: calc((100% - 2 * var(--ml-li-item)) / 3);
+  background: #ffffff;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .goodwill__voucher__list > li {
+    width: calc((100% - var(--ml-li-item)) / 2);
+    padding: 0 15px;
+  }
+  .goodwill__voucher__list > li:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .goodwill__voucher__list > li {
+    width: calc(100%);
+    padding: 0 30px;
+  }
+  .goodwill__voucher__list > li {
+    margin-left: 0;
+  }
+}
+.goodwill__voucher__list > li:first-child {
+  margin-left: 0;
+}
+.goodwill__voucher__list > li:hover {
+  background: #793d15;
+  color: #ffffff;
+}
+.goodwill__voucher__list > li img {
+  width: 100%;
+  height: auto;
+}
+.goodwill__voucher__list > li p {
+  padding-top: 1.1em;
+}
+.goodwill__voucher__list > li img {
+  margin-bottom: 0.9em;
+}
+.goodwill__voucher__list a.btn {
+  display: inline-block;
+  padding: 0.7em 1.9em;
+  margin-top: 0.5em;
+  margin-bottom: 1.8em;
+  border: 1px solid #464646;
+  background: #441f06;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+.goodwill__voucher__list > li:hover .btn {
+  background: #ffffff;
+  color: #3d3d3d;
+}
+.goodwill__opinion {
+  text-align: center;
+  padding-bottom: 7em;
+}
+.goodwill__opinion h3 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 2.1em;
+
+  display: inline-block;
+  padding: 0.5em 0.8em;
+  margin-bottom: 1.9em;
+  border: 1px solid #5a5a5a;
+}
+.goodwill__opinion__form {
+  justify-content: space-between;
+}
+.goodwill__opinion__form .form-left {
+  flex: 31%;
+  margin-right: 4%;
+}
+.goodwill__opinion__form .form-right {
+  flex: 65%;
+}
+.goodwill__opinion__form input,
+.goodwill__opinion__form textarea {
+  display: block;
+  width: 100%;
+  padding: 1.1em 1.3em;
+  margin-bottom: 2.1em;
+
+  background: #282825;
+  color: #5c5c5c;
+  outline: none;
+  border: 1px solid #5c5c5c;
+}
+.goodwill__opinion__form ::placeholder {
+  color: #5c5c5c;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.goodwill__opinion__form .btn {
+  display: block;
+  padding: 1.2em 6em;
+  color: #d8d7d7;
+  background: #3d3d40;
+  border: none;
+  outline: none;
+
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+/* SECTION NEWS  */
+
+.news {
+  padding-top: 4em;
+  padding-bottom: 5.1em;
+}
+.news__title {
+  font-weight: 300;
+  font-size: 2.1em;
+  text-align: center;
+  margin-bottom: 1.85em;
+  line-height: 0.85em;
+}
+
+.news__list-posts .post-image {
+  flex: 22%;
+}
+.news__list-posts .post-image img {
+  width: 100%;
+  height: auto;
+}
+.news__list-posts li {
+  margin-bottom: 1.7em;
+}
+.news__list-posts li .post-info {
+  flex: 75%;
+  margin-left: 3%;
+  border-bottom: 1px solid #e3e3e3;
+}
+.news__list-posts li:last-child .post-info {
+  border: none;
+}
+.news__list-posts .post-info .post-title {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #262626;
+  line-height: 1em;
+  margin-bottom: 0.4em;
+}
+.news__list-posts .post-info p {
+  font-weight: 300;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+.news__list-posts .post-info .post-date {
+  color: #939393;
+}
+.news__pagination {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+}
+.news__pagination ul {
+  display: flex;
+}
+.news__pagination ul li {
+  margin: 0 5px;
+}
+.news__pagination ul li a {
+  display: block;
+  padding: 5px 15px;
+  border: 1px solid #b4b4b4;
+  border-radius: 40%;
+  text-decoration: none;
+}
+.news__pagination ul li a:hover {
+  color: #ffffff;
+  background: #5ebeef;
+  border-color: #5ebeef;
+}
+.news__pagination ul li.dots a {
+  align-self: flex-end;
+  padding: 3px;
+  margin: 0;
+  border: none;
+}
+.news__pagination ul li.active a {
+  border-color: #5ebeef;
+}
+
+/* SECTION TEAM  */
+
+.team__wrapper {
+  --ml-carousel-item: 57px;
+  padding: 34px 30px 46px;
+  background: #262d2c;
+}
+.team__wrapper h3.team__title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 52px;
+}
+.team__list {
+  max-width: 960px;
+  padding: 0 30px;
+
+  margin: auto;
+  position: relative;
+}
+.team__list i.btn {
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+}
+.team__list i.btn:first-child {
+  left: -30px;
+  display: none;
+}
+.team__list i.btn:last-child {
+  right: -30px;
+}
+
+.carousel {
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+.carousel.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+.carousel > .carousel-item {
+  display: inline-block;
+  text-align: center;
+  width: calc((100% - 3 * var(--ml-carousel-item)) / 4);
+  margin-left: var(--ml-carousel-item);
+  margin-right: -4px;
+}
+.carousel > .carousel-item:first-child {
+  margin-left: 0;
+}
+.carousel > .carousel-item .member-name {
+  color: #0a98bc;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Tahoma";
+}
+.carousel > .carousel-item img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+.carousel > .carousel-item a > i {
+  color: #707574;
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+@media screen and (max-width: 992px) {
+  .carousel > .carousel-item {
+    width: calc((100% - 2 * var(--ml-carousel-item)) / 3);
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel > .carousel-item {
+    width: calc((100% - var(--ml-carousel-item)) / 2);
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel > .carousel-item {
+    width: calc(100%);
+  }
+}
+
+/* SECTION APP FOOTER  */
+.app-footer__wrapper {
+  padding-top: 26px;
+  padding-bottom: 167px;
+}
+.app-footer__wrapper .container {
+  padding: 0 2rem;
+}
+
+.app-footer__left {
+  float: left;
+}
+
+.app-footer__left img {
+  margin-bottom: 36px;
+}
+
+.app-footer__left p {
+  margin-bottom: 35px;
+  font-weight: 300;
+  line-height: 1rem;
+}
+.app-footer__left p:last-child {
+  color: #a9a9a9;
+  margin-top: 80px;
+}
+
+.app-footer__right {
+  float: right;
+}
+.app-footer__right p {
+  font-size: 2.1rem;
+  font-weight: 300;
+  line-height: 1.9rem;
+  margin-bottom: 32px;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 700px) {
+  .app-footer__right,
+  .app-footer__left {
+    float: none;
+    text-align: center;
+  }
+  .app-footer__left p:last-child {
+    margin-top: 0px;
+  }
+}
